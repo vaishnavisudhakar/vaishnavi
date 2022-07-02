@@ -1,9 +1,13 @@
 clear
 echo "this is shell script"
-a=1
-b=2
-if [[ a<b ]]
-echo "a is smaller than b"
+echo "enter numbers :"
+read a
+read b
+if [[ $a<$b ]]
+then
+	echo "$a is small"
 else
-echo "a is larger than b"
-end if
+	echo "$b is small"
+fi
+
+
